@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Noto Sans Mono';
+    src: url('NotoSansMono.ttf') format('truetype');
+    font-weight: 100 900;
+    font-stretch: 62.5% 100%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Serif Display';
+    src: url('NotoSerifDisplay.ttf') format('truetype');
+    font-weight: 100 900;
+    font-stretch: 62.5% 100%;
+    font-style: normal;
+}
+
+body, .serif {
+    font-family: 'Noto Serif Display', serif;
+}
+
+.mono {
+    font-family: 'Noto Sans Mono', sans-serif;
+}
