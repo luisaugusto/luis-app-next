@@ -11,10 +11,12 @@ const Header: React.FC = () => {
       <div
         className={[
           'fixed w-screen h-screen bg-gradient-to-tr from-transparent to-green-900 transition-opacity top-0 left-0 z-20 duration-700',
-          isMenuOpen ? 'opacity-100' : 'opacity-0'
+          isMenuOpen
+            ? 'opacity-100 pointer-events-auto'
+            : 'opacity-0 pointer-events-none'
         ].join(' ')}
       />
-      <header className="sticky top-0 w-full p-8 z-30 flex-col flex items-end gap-4">
+      <header className="sticky top-0 w-full p-8 z-30 flex-col flex items-end gap-4 pointer-events-none">
         <MenuToggle isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         <nav className="relative text-white">
           <ul

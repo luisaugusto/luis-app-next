@@ -38,8 +38,8 @@ const MenuToggle: React.FC<MenuToggleProps> = ({ isMenuOpen, toggleMenu }) => {
       onClick={toggleMenu}
       aria-label="Toggle Menu"
       className={[
-        'rounded-full border-2 p-2 transition-all',
-        isMenuOpen ? 'bg-transparent border-white' : 'bg-white border-black'
+        'rounded-full border-2 p-2 transition-all pointer-events-auto',
+        isMenuOpen ? 'bg-transparent border-white' : 'bg-green-200 border-black'
       ].join(' ')}
     >
       <MenuIcon

@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div className="overflow-hidden">
       <section
         className="flex items-center p-8 justify-center"
         style={{ height: `calc(100vh - ${headerFooterHeight}px)` }}
@@ -116,7 +116,7 @@ const HeroSection: React.FC = () => {
         )}
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
 

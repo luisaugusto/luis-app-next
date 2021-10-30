@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       ].join(' ')}
     >
       <h2 className="text-2xl font-light mono">Software Engineer</h2>
-      <a href="#" className="animate-bounce">
+      <a href="#about" className="animate-bounce">
         <ChevronDownIcon className="w-16" />
       </a>
     </footer>
