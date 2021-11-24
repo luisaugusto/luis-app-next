@@ -10,7 +10,6 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@heroicons/react": "^1.0.4",
     "next": "^12.0.1",
-    "polymorph-js": "^1.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

@@ -1,6 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import '@fortawesome/fontawesome-free/css/all.css';
-import 'styles/fonts/fonts.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'styles/global.css';
 
 function MyApp({ Component, pageProps }) {
