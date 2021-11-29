@@ -32,8 +32,11 @@
 body {
   background: var(--background-color);
   color: var(--text-color);
-  font-family: 'Karla', sans-serif;
   overflow: hidden;
+}
+
+main {
+  font-family: 'Karla', sans-serif;
 }
 
 main h1 {
