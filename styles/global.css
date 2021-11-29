@@ -39,6 +39,11 @@ main {
   font-family: 'Karla', sans-serif;
 }
 
+main h1,
+main h2 {
+  text-align: center;
+}
+
 main h1 {
   font-family: 'Spectral', serif;
   font-size: 72px;

@@ -32,7 +32,7 @@ export default function Home() {
         <title>Luis Augusto</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <section className="min-h-screen flex flex-col justify-end items-center">
+      <section className="min-h-screen flex flex-col justify-end items-center overflow-hidden">
         <div
           className="flex flex-col gap-4 items-center transition-all p-8"
           style={{ opacity: displayContent ? 1 : 0 }}
