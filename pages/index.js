@@ -28,6 +28,7 @@ export default function Home() {
   return (
     <main>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Luis Augusto</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
