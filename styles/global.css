@@ -7,14 +7,14 @@
   --cyan: #0a9396;
   --soft-orange: #e9d8a6;
 
-  --background-color: var(--primary-light);
+  --background-color: var(--cyan);
   --text-color: var(--primary-dark);
 
   --moon-color: var(--soft-orange);
-  --trees-background: var(--cyan);
+  --trees-background: var(--primary-light);
   --trees-layer-two: var(--dark-cyan);
   --trees-layer-three: var(--text-color);
-  --trees-layer-four: var(--cyan);
+  --trees-layer-four: var(--primary-light);
   --trees-layer-five: var(--dark-cyan);
   --trees-foreground: var(--background-color);
 }
@@ -23,6 +23,9 @@
   :root {
     --background-color: var(--primary-dark);
     --text-color: var(--primary-light);
+
+    --trees-background: var(--cyan);
+    --trees-layer-four: var(--cyan);
   }
 }
 
