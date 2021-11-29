@@ -1,3 +1,44 @@
-* {
-    scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Spectral&display=swap');
+
+:root {
+  --primary-dark: #001219;
+  --primary-light: #94d2bd;
+  --dark-cyan: #005f73;
+  --cyan: #0a9396;
+  --soft-orange: #e9d8a6;
+
+  --background-color: var(--primary-light);
+  --text-color: var(--primary-dark);
+
+  --moon-color: var(--soft-orange);
+  --trees-background: var(--cyan);
+  --trees-layer-two: var(--dark-cyan);
+  --trees-layer-three: var(--text-color);
+  --trees-layer-four: var(--cyan);
+  --trees-layer-five: var(--dark-cyan);
+  --trees-foreground: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--primary-dark);
+    --text-color: var(--primary-light);
+  }
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Karla', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Spectral', serif;
+  font-size: 72px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 28px;
 }
