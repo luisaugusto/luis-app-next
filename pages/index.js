@@ -64,7 +64,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <Forest windowHeight={windowHeight} />
+        <Forest
+          windowHeight={windowHeight}
+          style={{ opacity: windowHeight ? 1 : 0 }}
+        />
       </section>
     </main>
   );

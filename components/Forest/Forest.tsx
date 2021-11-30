@@ -15,11 +15,11 @@ const SVG = styled.svg<{ top: number }>`
   }
 `;
 
-interface ForestProps {
+interface ForestProps extends React.SVGProps<SVGSVGElement> {
   windowHeight: number;
 }
 
-const Forest: React.FC<ForestProps> = ({ windowHeight }) => {
+const Forest: React.FC<ForestProps> = ({ windowHeight, style }) => {
   const [scrollPos, setScrollPos] = useState(windowHeight);
 
   useEffect(() => {
@@ -37,6 +37,7 @@ const Forest: React.FC<ForestProps> = ({ windowHeight }) => {
       viewBox="0 0 1440 674"
       xmlns="http://www.w3.org/2000/svg"
       top={-scrollPos}
+      style={style}
     >
       <path
         d="M982.656 262.845C982.656 407.907 865.069 525.501 720.014 525.501C574.959 525.501 457.372 407.907 457.372 262.845C457.372 117.781 574.959 0.185394 720.014 0.185394C865.069 0.185394 982.656 117.781 982.656 262.845Z"
