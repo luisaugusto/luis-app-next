@@ -7,26 +7,16 @@
   --cyan: #0a9396;
   --soft-orange: #e9d8a6;
 
-  --background-color: var(--cyan);
-  --text-color: var(--primary-dark);
+  --background-color: var(--primary-dark);
+  --text-color: var(--primary-light);
 
   --moon-color: var(--soft-orange);
-  --trees-background: var(--primary-light);
+  --trees-background: var(--cyan);
   --trees-layer-two: var(--dark-cyan);
   --trees-layer-three: var(--text-color);
-  --trees-layer-four: var(--primary-light);
+  --trees-layer-four: var(--cyan);
   --trees-layer-five: var(--dark-cyan);
   --trees-foreground: var(--background-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: var(--primary-dark);
-    --text-color: var(--primary-light);
-
-    --trees-background: var(--cyan);
-    --trees-layer-four: var(--cyan);
-  }
 }
 
 body {
