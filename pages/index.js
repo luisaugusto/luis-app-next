@@ -39,7 +39,7 @@ export default function Home() {
           style={{ opacity: displayContent ? 1 : 0 }}
         >
           <h1>Luis Augusto</h1>
-          <h2>Software Engineer &amp; Adventurer</h2>
+          <h2>Software Engineer &amp; Traveler</h2>
           <div className="flex items-center gap-4 text-2xl">
             <a
               href="https://twitter.com/itsluisaugusto"
