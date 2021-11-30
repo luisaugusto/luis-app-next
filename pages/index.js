@@ -15,7 +15,8 @@ export default function Home() {
   }, [windowHeight]);
 
   useEffect(() => {
-    const calculateWindowHeight = () => setWindowHeight(window.outerHeight);
+    const calculateWindowHeight = () =>
+      setWindowHeight(document.querySelector('main').clientHeight);
     calculateWindowHeight();
 
     window.addEventListener('resize', calculateWindowHeight);
@@ -34,7 +35,7 @@ export default function Home() {
       </Head>
       <section className="min-h-screen flex flex-col justify-end items-center overflow-hidden">
         <div
-          className="flex flex-col gap-4 items-center transition-all p-8"
+          className="flex flex-col gap-4 items-center transition-all p-8 duration-300"
           style={{ opacity: displayContent ? 1 : 0 }}
         >
           <h1>Luis Augusto</h1>
@@ -63,7 +64,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        {windowHeight > 0 && <Forest windowHeight={windowHeight} />}
+        <Forest windowHeight={windowHeight} />
       </section>
     </main>
   );

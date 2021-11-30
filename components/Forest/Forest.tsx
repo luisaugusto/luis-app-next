@@ -8,10 +8,10 @@ const SVG = styled.svg<{ top: number }>`
   height: auto;
   position: relative;
   top: ${({ top }) => top + 'px'};
-  transition: all 2s;
+  transition: ${({ top }) => (top === 0 ? 'all 2s' : 'none')};
 
   path {
-    transition: all 2s;
+    transition: ${({ top }) => (top === 0 ? 'all 2s' : 'none')};
   }
 `;
 
@@ -23,8 +23,12 @@ const Forest: React.FC<ForestProps> = ({ windowHeight }) => {
   const [scrollPos, setScrollPos] = useState(windowHeight);
 
   useEffect(() => {
-    setScrollPos(0);
-  }, []);
+    if (windowHeight > 0) setScrollPos(windowHeight);
+  }, [windowHeight]);
+
+  useEffect(() => {
+    if (scrollPos > 0) setTimeout(() => setScrollPos(0), 100);
+  }, [scrollPos]);
 
   return (
     <SVG
